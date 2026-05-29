@@ -1,0 +1,50 @@
+/* Hero.css */
+
+.scroll-circle-container {
+  position: relative;
+  width: 144px;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.scroll-circle-container:hover {
+  transform: scale(1.1) !important;
+}
+
+.scroll-circle-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 12s linear infinite;
+}
+
+.scroll-circle-svg text {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.scroll-arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,89 @@
+.education-section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.edu-card {
+  padding: 35px;
+  border-left: 4px solid var(--accent-blue);
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateX(10px);
+  border-left-color: var(--accent-purple);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.institution {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
+}
+
+.edu-duration {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px 12px;
+  border-radius: 15px;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.edu-degree {
+  color: var(--accent-blue);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.edu-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--card-border);
+  padding-top: 15px;
+}
+
+.edu-location {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.edu-location::before {
+  content: '📍';
+  font-size: 0.9rem;
+}
+
+.edu-score {
+  color: var(--text-primary);
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .edu-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .edu-duration {
+    margin-left: 0;
+  }
+}
